@@ -12,7 +12,7 @@ def find_min_in_nested_arrays(src)
       # Element of the inner array at element_index
       # If the length of the current element is greater than the length of lowest_temperature
       # Set lowest_temperature to the current element
-      if src[row_index][element_index].length < lowest_temperature
+      if src[row_index][element_index] < lowest_temperature
         lowest_temperature = src[row_index][element_index]
       end
       element_index += 1
