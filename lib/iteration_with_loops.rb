@@ -7,7 +7,7 @@ def find_min_in_nested_arrays(src)
     element_index = 0
     lowest_temperature = 212
     while element_index < src[row_index].count do
-   
+
       # Array at row_index
       # Element of the inner array at element_index
       # If the length of the current element is greater than the length of lowest_temperature
@@ -17,13 +17,13 @@ def find_min_in_nested_arrays(src)
       end
       element_index += 1
     end
-   
+
     # We have to check every element in each inner array, so after the loop finishes
     # The current value of lowest_temperature is pushed into outer_results
     outer_results << lowest_temperature
     row_index += 1
   end
-   
+
   outer_results
 
 end
